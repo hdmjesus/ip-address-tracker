@@ -12,7 +12,7 @@ export const IpAddressHeader = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className="font-rubik font-bold text-white text-xl text-center mb-4">
+      <h1 className="  font-rubik font-bold text-white text-xl text-center mb-4">
         IP Address Tracker
       </h1>
       <IpAddressInput />
