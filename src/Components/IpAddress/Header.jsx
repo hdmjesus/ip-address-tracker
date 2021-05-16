@@ -6,7 +6,7 @@ import bgHeader from "../../Statics/images/pattern-bg.png";
 export const IpAddressHeader = () => {
   return (
     <header
-      className="w-full h-80 p-7  m-auto"
+      className="w-full h-80 p-7  m-auto z-10"
       style={{
         backgroundImage: `url(${bgHeader})`,
         backgroundRepeat: "no-repeat",

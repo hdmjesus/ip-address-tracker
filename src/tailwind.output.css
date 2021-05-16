@@ -32252,6 +32252,12 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+#mapid {
+  height: 100vh;
+  width: 100%;
+  margin-top: -70px;
+}
+
 @media (min-width: 400px) {
   .xsm\:container {
     width: 100%;
