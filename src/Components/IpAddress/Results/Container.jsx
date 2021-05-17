@@ -5,7 +5,7 @@ import { IpAddressResultsitemIsp } from "./itemIsp";
 import { useGlobalData } from "../../../Hooks/useGlobalData";
 
 export const IpAddressResultsContainer = () => {
-  const { data, loading, error } = useGlobalData();
+  const { data } = useGlobalData();
   const { ip, isp, location } = data || {};
 
   return (
@@ -13,12 +13,6 @@ export const IpAddressResultsContainer = () => {
       <IpAddressResultsitemIp category={"IP Address"} ip={ip} />
       <IpAddressResultsitemLocation category={"Location"} location={location} />
       <IpAddressResultsitemIsp category={"ISP"} isp={isp} />
-
-      {/* {!loading ? (
-        <IpAddressResultsitemIp category={"IP Address"} ip={ip} />
-      ) : (
-        <IpAddressResultsitemLocation category={"Location"} ip={ip} />
-      )} */}
     </section>
   );
 };

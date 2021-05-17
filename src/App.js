@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useCallback, Suspense } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { ScreenHome } from "./Screen/ScreenHome";
 import { useFetch } from "./Hooks/useFetch";
 import { apiKey } from "./config";
 import { url } from "./config";
 
 import { TextContext } from "./Context/StaticContext";
+import { divIcon } from "leaflet";
 const { Provider } = TextContext;
 
 export const App = () => {
@@ -32,10 +33,8 @@ export const App = () => {
   );
 
   return (
-    <Suspense>
-      <Provider value={{ data, loading, error, setValueInput }}>
-        <ScreenHome />
-      </Provider>
-    </Suspense>
+    <Provider value={{ data, loading, error, setValueInput }}>
+      <ScreenHome />
+    </Provider>
   );
 };
