@@ -6,24 +6,13 @@ import { url } from "./config";
 
 import { TextContext } from "./Context/StaticContext";
 import { divIcon } from "leaflet";
+import { getUrlApi } from "./helpers/getUrlApi";
 const { Provider } = TextContext;
 
 export const App = () => {
   const [inputValue, setinputValue] = useState("www.hdjesus.com");
-  let UrlApiIp;
 
-  // Esta dondicion , devuelve el endpoint correspondiente a si es una direccion ip o un nombre de dominio
-  if (
-    inputValue.match(
-      /^((25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d?)$/
-    )
-  ) {
-    UrlApiIp = `${url}?apiKey=${apiKey}&ipAddress=${inputValue}`;
-  } else {
-    UrlApiIp = `${url}?apiKey=${apiKey}&domain=${inputValue}`;
-  }
-
-  const { data, loading, error } = useFetch(UrlApiIp);
+  const { data, loading, error } = useFetch(getUrlApi(inputValue));
 
   const setValueInput = useCallback(
     (value) => {
