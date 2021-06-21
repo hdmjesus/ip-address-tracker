@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import L from "leaflet";
 import { useGlobalData } from "../../Hooks/useGlobalData";
 import { Map, TileLayer, Marker } from "react-leaflet";
-import "leaflet/src/core/Class";
 
 export const MapPrint = () => {
   const { data, loading, error } = useGlobalData();

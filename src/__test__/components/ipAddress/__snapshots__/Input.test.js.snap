@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <IpAddressInput/> should show good the component 1`] = `
+<form
+  className="  m-auto flex w-full "
+  onSubmit={[Function]}
+>
+  <div
+    className="flex min-w-200 justify-between bg-white rounded-lg  h-9 m-auto  w-full   "
+  >
+    <input
+      className=" w-full p-2 text-xs bg-transparent outline-none "
+      name="ipInput"
+      onChange={[Function]}
+      placeholder="Search for Any IP Address or Domain"
+      type="text"
+      value=""
+    />
+    <button
+      className="bg-black h-9 w-9 rounded-r-lg"
+      type="submit"
+    >
+      <img
+        alt="iconArrow"
+        className="w-3 m-auto"
+        src="icon-arrow.svg"
+      />
+    </button>
+  </div>
+</form>
+`;

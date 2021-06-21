@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en <IpAddressResultsContainer/> should show component when loading is true  1`] = `
+<section
+  className="w-11/12 bg-white p-3 rounded-md mt-5 m-auto flex flex-col"
+>
+  <article
+    className="m-auto mb-4 uppercase font-rubik "
+  >
+    <h4
+      className="text-colorgray font-bold text-xs tracking-wider text-center"
+    >
+      IP Address
+    </h4>
+  </article>
+  <article
+    className="m-auto mb-4 uppercase font-rubik "
+  >
+    <h4
+      className="text-colorgray font-bold text-xs tracking-wider text-center"
+    >
+      Location
+    </h4>
+  </article>
+  <article
+    className="m-auto mb-4 uppercase font-rubik "
+  >
+    <h4
+      className="text-colorgray font-bold text-xs tracking-wider text-center"
+    >
+      ISP
+    </h4>
+  </article>
+</section>
+`;

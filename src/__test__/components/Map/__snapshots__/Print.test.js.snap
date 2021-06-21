@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en <Print/> debe mostrarse correctamente 1`] = `
+<div>
+  <div
+    id="mapid"
+  />
+</div>
+`;

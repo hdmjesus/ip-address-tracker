@@ -41,9 +41,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
     "@fullhuman/postcss-purgecss": "^4.0.2",
+    "@testing-library/react-hooks": "^7.0.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
     "autoprefixer": "^10.2.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
     "tailwindcss": "^2.0.3"
